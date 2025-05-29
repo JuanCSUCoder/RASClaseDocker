@@ -2,6 +2,8 @@
 
 [Volver al índice](/)
 
+#### Limpieza de Minikube
+
 Es importante detener y eliminar los recursos cuando haya terminado para liberar los recursos del sistema.
 
 1.  **Eliminar el Service y el Deployment:**
@@ -27,6 +29,26 @@ Es importante detener y eliminar los recursos cuando haya terminado para liberar
     ```
 
     Esto eliminará la máquina virtual de Minikube y todos sus datos.
+
+#### Limpieza de GAIA Cloud
+
+Es importante eliminar los recursos del clúster de pruebas cuando haya terminado para evitar costos innecesarios y liberar recursos.
+
+1.  **Eliminar el Service y el Deployment:**
+
+    ```bash
+    kubectl delete -f flask-service.yaml
+    kubectl delete -f flask-deployment.yaml
+    ```
+
+2.  **Limpiar el archivo `kubeconfig` (opcional):**
+
+    Si solo usó este archivo `kubeconfig` para este taller, puede eliminarlo de su directorio `.kube`:
+
+    ```bash
+    rm ~/.kube/config
+    ```
+    Si fusionó configuraciones, deberá editar el archivo `~/.kube/config` para eliminar la entrada de este clúster específico.
 
 ---
 

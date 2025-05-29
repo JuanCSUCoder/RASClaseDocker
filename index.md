@@ -8,12 +8,12 @@ Claro, aquí tienes un documento detallado con instrucciones paso a paso para un
 
 **Objetivos del taller:**
 
-* Comprender los conceptos básicos de Docker (imágenes, contenedores, Dockerfile).
-* Aprender a instalar y usar Docker en Ubuntu 24.04 LTS.
-* Contenerizar una aplicación simple con Docker.
-* Introducir los conceptos fundamentales de Kubernetes (pods, deployments, services).
-* Configurar un entorno de Kubernetes local con Minikube.
-* Desplegar una aplicación contenerizada en Kubernetes.
+- Comprender los conceptos básicos de Docker (imágenes, contenedores, Dockerfile).
+- Aprender a instalar y usar Docker en Ubuntu 24.04 LTS.
+- Contenerizar una aplicación simple con Docker.
+- Introducir los conceptos fundamentales de Kubernetes (pods, deployments, services).
+- Aprender a configurar `kubectl` para acceder a un clúster de pruebas usando un archivo `kubeconfig`.
+- Desplegar una aplicación contenerizada en Kubernetes.
 
 **Requisitos previos:**
 
@@ -30,7 +30,11 @@ Claro, aquí tienes un documento detallado con instrucciones paso a paso para un
    - Trabajando con imágenes y contenedores
    - Creación de un Dockerfile
    - Construcción y ejecución de una aplicación contenerizada
-2. [Introducción a Kubernetes con Minikube](/kubernetes.md)
+2. Introducción a Kubernetes con [Minikube](/kubernetes.md) o con [GAIA Cloud](/kubernetes-gaia.md)
+    - Configuración de kubectl
+    - Desplegar una aplicación en Kubernetes
+    - Exponer la aplicación con un Service
+    - Verificar el estado del despliegue
 3. [Limpieza](/cleanup.md)
 
 
